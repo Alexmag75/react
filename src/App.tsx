@@ -1,12 +1,13 @@
 
 import './App.css'
+import {TodoComponent} from "./componets/todoComponent/TodoComponent.tsx";
 
 function App() {
 
 
   return (
     <>
-старт
+        {<TodoComponent></TodoComponent>}
     </>
   )
 }
