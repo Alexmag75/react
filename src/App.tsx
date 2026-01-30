@@ -1,15 +1,13 @@
 
 import './App.css'
-import {TodoComponent} from "./componets/todoComponent/TodoComponent.tsx";
+import {TodosComponents} from "./componets/todosComponents/TodosComponents.tsx";
 
 function App() {
-
-
   return (
     <>
-        {<TodoComponent></TodoComponent>}
+            <TodosComponents/>
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,8 +1,8 @@
 import './TodosComponents.css'
 import {useEffect, useState} from "react";
-import {ToDos} from "../../models/ToDos.ts";
 import {loadTodos} from "../../service/api.service.ts";
 import {TodoComponent} from "../todoComponent/TodoComponent.tsx";
+import type {ToDos} from "../../models/ToDos.ts";
 
 export const TodosComponents = () => {
     const [toDos, setToDos] = useState<ToDos[]>([])

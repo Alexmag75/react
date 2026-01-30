@@ -1,6 +1,6 @@
 import './TodoComponents.css'
-import {FC} from "react";
-import {ToDos} from "../../models/ToDos.ts";
+import type {FC} from "react";
+import {type ToDos} from "../../models/ToDos.ts";
 
 type PropType = {
     todo:ToDos
