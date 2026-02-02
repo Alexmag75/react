@@ -1,14 +1,10 @@
-
 import './App.css'
-
+import {Posts} from "./components/postsComponent/Posts.tsx";
 function App() {
-
-
   return (
     <>
-старт
+               <Posts/>
     </>
   )
 }
-
 export default App
