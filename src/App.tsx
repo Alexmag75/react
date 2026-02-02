@@ -1,14 +1,10 @@
-
 import './App.css'
-
+import {Comments} from "./components/comentsComponent/Comments.tsx";
 function App() {
-
-
   return (
     <>
-старт
+               <Comments/>
     </>
   )
 }
-
 export default App
