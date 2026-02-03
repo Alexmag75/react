@@ -1,0 +1,10 @@
+.bodyTodo{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px
+}
+.todoCompleted{
+    margin-right: 5px;
+    background: #d8d6d6;
+    padding: 2px 5px
+}
