@@ -1,7 +1,9 @@
+import {LoadUsersJsonComponent} from "./LoadUsersJsonComponent.tsx";
+
 export const UsersJsonplaceholderComponent=()=>{
     return(
         <>
-            <div> UsersJsonplaceholderComponent</div>
+            <LoadUsersJsonComponent/>
         </>
     );
 };
