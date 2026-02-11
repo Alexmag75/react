@@ -1,6 +1,6 @@
 import './UserComponent.css'
 import {type FC} from "react";
-import type {UserModelDummy} from "../../models/dummy/UserModelDummy.ts";
+import type {UserModelDummy} from "../../models/usersDummy/UserModelDummy.ts";
 type PropType = {
     user:UserModelDummy
 }

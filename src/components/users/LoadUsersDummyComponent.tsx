@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import type {UserModelDummy} from "../../models/dummy/UserModelDummy.ts";
 import {UserDummyComponent} from "./UserDummyComponent.tsx";
 import {LoadUsersDummy} from "../../services/api.service.ts";
+import type {UserModelDummy} from "../../models/usersDummy/UserModelDummy.ts";
 export const LoadUsersDummyComponent = () => {
     const [toUsers, setToUsers] = useState<UserModelDummy[]>([])
     useEffect(() => {
