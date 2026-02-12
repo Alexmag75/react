@@ -4,7 +4,6 @@ import {UsersPage} from "../layutos/UsersPage.tsx";
 import {PostsPage} from "../layutos/PostsPage.tsx";
 
 
-
 export const routes=createBrowserRouter([
     {
         path: '/', element: <MainLayout/>, children:[
