@@ -1,7 +1,10 @@
+import {LoadCommentsDummyComponent} from "./LoadCommentsDummyComponent.tsx";
+
+
 export const CommentDummyjsonComponent=()=>{
     return(
         <>
-            <div> CommentDummyjsonComponent</div>
+            <LoadCommentsDummyComponent/>
         </>
     );
 };

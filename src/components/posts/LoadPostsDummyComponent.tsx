@@ -4,7 +4,7 @@ import {LoadPostsDummy} from "../../services/api.service.ts";
 import {PostDummyComponent} from "./PostDummyComponent.tsx";
 
 
-export const LoadUsersDummyComponent = () => {
+export const LoadPostsDummyComponent = () => {
     const [toPosts, setToPosts] = useState<PostModelDummy[]>([])
     useEffect(() => {
         LoadPostsDummy().then(value => setToPosts(value));

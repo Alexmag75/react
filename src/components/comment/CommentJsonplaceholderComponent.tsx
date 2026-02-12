@@ -1,7 +1,10 @@
+import {LoadCommentsJsonComponent} from "./LoadCommentsJsonComponent.tsx";
+
+
 export const CommentJsonplaceholderComponent=()=>{
     return(
         <>
-            <div> CommentJsonplaceholderComponent</div>
+            <LoadCommentsJsonComponent/>
         </>
     );
 };
