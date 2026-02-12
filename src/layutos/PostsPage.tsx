@@ -1,5 +1,10 @@
+import {PostsComponents} from "../componets/postsComponent/PostsComponent.tsx";
+
+
 export  const  PostsPage =()=> {
     return(
-    <div>    post    </div>
+
+        <PostsComponents/>
+
     );
 };
