@@ -11,7 +11,7 @@ export const LoadCommentsDummyComponent = () => {
     return (
         <div>
             {
-                toComments?.map(comment=><CommentDummyComponent comment={comment} key={comment.id}/>)
+                toComments.map(comment=><CommentDummyComponent comment={comment} key={comment.id}/>)
             }
         </div>
     );

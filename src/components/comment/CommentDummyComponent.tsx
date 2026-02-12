@@ -11,7 +11,6 @@ export const CommentDummyComponent:FC<PropType> = ({comment}) => {
                 <p> {comment.id} {comment.body} </p>
                 <p> Лайк: {comment.likes}</p>
                 <p className='user'> {comment.user.username} {comment.user.fullName}</p>
-
             </div>
         </>
     );

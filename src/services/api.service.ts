@@ -42,8 +42,8 @@ const LoadCommentsJson=async ():Promise<CommentModelJson[]>=> {
 export { LoadCommentsJson }
 
 const LoadCommentsDummy=async ():Promise<CommentModelDummy[]>=> {
-    const response:{comment:CommentModelDummy[],total:number, skip:number, limit:number}= await fetch(URL_DUMMY+'/comments')
+    const response:{comments:CommentModelDummy[],total:number, skip:number, limit:number}= await fetch(URL_DUMMY+'/comments')
         .then(res=>res.json())
-    return response.comment;
+    return response.comments;
 }
 export { LoadCommentsDummy }
