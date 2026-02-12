@@ -1,7 +1,10 @@
+import {LoadPostsJsonComponent} from "./LoadPostsJsonComponent.tsx";
+
 export const PostsJsonplaceholderComponent=()=>{
     return(
         <>
-            <div> PostsJsonplaceholderComponent</div>
+
+            <LoadPostsJsonComponent/>
         </>
     );
 };

@@ -3,7 +3,7 @@ import {Outlet} from "react-router";
 export const PostsComponent=()=> {
     return (
         <>
-            <div> post</div>
+            <div> Посты</div>
             <Outlet/>
         </>
     );

@@ -1,7 +1,10 @@
+import {LoadUsersDummyComponent} from "./LoadPostsDummyComponent.tsx";
+
+
 export const PostsDummyjsonComponent=()=>{
     return(
         <>
-            <div> PostsDummyjsonComponent</div>
+            <LoadUsersDummyComponent/>
         </>
     );
 };
