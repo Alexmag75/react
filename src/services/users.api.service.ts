@@ -1,5 +1,6 @@
 import type {UsersModel} from "../modeles/UsersModel/UsersModel.ts";
 
+
 const endpoint = import.meta.env.VITE_API_BASE_URL+'/users'
 
 const loadUsers=async ():Promise<UsersModel[]>=> {
@@ -8,4 +9,7 @@ const loadUsers=async ():Promise<UsersModel[]>=> {
     return response.users
 }
 export {loadUsers}
+
+
+
 
