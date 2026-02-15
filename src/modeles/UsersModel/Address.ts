@@ -1,4 +1,5 @@
-import type {Coordinates} from "./UsersModel.ts";
+import type {Coordinates} from "./Coordinates.ts";
+
 
 export interface Address {
     address: string;
