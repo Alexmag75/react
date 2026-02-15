@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import {loadUsers} from "../services/users.api.service.ts";
 import {UserComponent} from "./UserComponent.tsx";
-import type {UsersModel} from "../modeles/UsersModel/UsersModel.ts";
+import type {UsersModel} from "../modeles/Users/UsersModel.ts";
+import {loadUsers} from "../services/users.api.service.tsx";
 
 export const UsersComponents = () => {
     const [users, setUsers] = useState<UsersModel[]>([])

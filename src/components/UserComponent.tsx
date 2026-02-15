@@ -1,7 +1,8 @@
 import './UserComponent.css'
 import {useNavigate} from "react-router";
 import type {FC} from "react";
-import type {UsersModel} from "../modeles/UsersModel/UsersModel.ts";
+import type {UsersModel} from "../modeles/Users/UsersModel.ts";
+
 
 type Props= {
     user: UsersModel;

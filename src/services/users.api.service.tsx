@@ -1,4 +1,4 @@
-import type {UsersModel} from "../modeles/UsersModel/UsersModel.ts";
+import type {UsersModel} from "../modeles/Users/UsersModel.ts";
 
 
 const endpoint = import.meta.env.VITE_API_BASE_URL+'/users'

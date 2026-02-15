@@ -1,9 +1,9 @@
 import {useParams} from "react-router";
+import type {CartsRespons} from "../modeles/Carts/CartsRespons.ts";
+import {CartComponent} from "./CartComponent.tsx";
+import {cartService} from "../services/api.service.tsx";
 import type {CartsModel} from "../modeles/Carts/CartsModel.ts";
 import {useEffect, useState} from "react";
-import type {CartsRespons} from "../modeles/Carts/CartsRespons.ts";
-import {cartService} from "../services/api.service.ts";
-import {CartComponent} from "./CartComponent.tsx";
 
 export const CartsComponent=()=>{
 
