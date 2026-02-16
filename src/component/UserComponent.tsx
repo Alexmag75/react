@@ -1,5 +1,6 @@
 import type {FC} from "react";
 import type {IUsers} from "../modeles/IUsers.ts";
+import './UserComponent.css'
 
 type Props= {
     user: IUsers;
@@ -8,9 +9,11 @@ type Props= {
 export const UserComponent:FC<Props> = ({user}) => {
 
     return (
+
         <div className='profile-card'>
              <p> {user.id} {user.firstName} {user.lastName} {user.maidenName} {user.age} лет {user.birthDate}</p>
 
         </div>
+
     );
 };

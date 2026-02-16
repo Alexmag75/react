@@ -4,6 +4,7 @@ import type {IUsers} from "../modeles/IUsers.ts";
 import type {IUsersRespons} from "../modeles/IUsersRespons.ts";
 import {loadUsers} from "../services/api.service.tsx";
 import {useSearchParams} from "react-router";
+import './UsersComponent.css'
 
 export const UsersComponents = () => {
 
@@ -19,7 +20,8 @@ export const UsersComponents = () => {
     }, [searchParams]);
 
     return (
-            <div >
+            <div className='container'>
+
                 {
                     users.map((user:IUsers)=><UserComponent user={user} key={user.id}/>)
                 }
