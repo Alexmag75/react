@@ -5,7 +5,7 @@ export const Menu=()=>{
         <>
             <ul>
                 <li><Link to={'/cars'}>cars</Link></li>
-
+                <li><Link to={'/cars/create'}>carsAdd</Link></li>
             </ul>
 
         </>
