@@ -12,3 +12,7 @@ export const getCars = async ():Promise<Cars[]> => {
     return cars;
 
 }
+
+export const addCar=async (car:Cars)=>{
+await axiosInstance.post<Cars>("/cars",car);
+}
