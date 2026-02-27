@@ -23,6 +23,7 @@ export const login=async ({username,password,expiresInMins}:LoginData):Promise<I
 }
 
 export const LoadAuthProducts=async ():Promise<IProducts[]>=>{
-const {data}= await axiosInstance.get<IProductsResponseModelType[]>('/products')
+const {data}= await axiosInstance.get<IProductsResponseModelType>('/products')
+    return data.products
 
 }
