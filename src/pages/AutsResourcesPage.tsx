@@ -4,22 +4,31 @@ import type {IProducts} from "../models/products/IProducts.ts";
 import {Product} from "../components/productsComponent/Product.tsx";
 import './AutsResourcesPage.css'
 
-export const AutsResourcesPage=()=>{
+export const AutsResourcesPage = () => {
+    // Создаем состояние массив продуктов и функцию для его обновления.
     const [products, setProducts] = useState<IProducts[]>([]);
+
     useEffect(() => {
-        LoadAuthProducts().then(products  => {setProducts(products)}).catch(e =>{console.log(e)});
-        Refresh().then(() =>  LoadAuthProducts())
-                    .then(products  => {setProducts(products)});
+        // Пытаемся сразу загрузить продукты
+        LoadAuthProducts()
+            .then(products => { setProducts(products) }) // Если успешно — сохраняем их
+            .catch(e => { console.log(e) }); // Если ошибка (например, токен просрочен) — выводим в консоль ошибку
+
+        // запускаем цепочку обновления токена (Refresh).
+        Refresh()
+            .then(() => LoadAuthProducts()) // После того как Refresh обновил токен в LocalStorage, снова запрашиваем продукты
+            .then(products => {
+                setProducts(products); // Обновляем массив данными
+            });
     }, []);
 
-    return(
+    return (
         <>
             {
                 <div className="product-list">
-                    {products.map((product:IProducts)=><Product product={product} key={product.id}/>)}
+            {products.map((product: IProducts) => (<Product product={product} key={product.id} />))}
                 </div>
             }
-
         </>
     )
 }

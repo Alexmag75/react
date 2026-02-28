@@ -11,6 +11,5 @@ export const routes=createBrowserRouter([
             {path: 'login', element: <LoginPage/>},
             {path: '/auth/resources', element: <AutsResourcesPage/>}
         ]
-
     }
 ])
