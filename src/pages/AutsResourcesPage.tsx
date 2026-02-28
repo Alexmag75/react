@@ -12,13 +12,18 @@ export const AutsResourcesPage = () => {
         // Пытаемся сразу загрузить продукты
         LoadAuthProducts()
             .then(products => { setProducts(products) }) // Если успешно — сохраняем их
-            .catch(e => { console.log(e) }); // Если ошибка (например, токен просрочен) — выводим в консоль ошибку
+            .catch(e => {
+                console.log(e)  // Если ошибка (например, токен просрочен) — выводим в консоль ошибку
 
-        // запускаем цепочку обновления токена (Refresh).
-        Refresh()
-            .then(() => LoadAuthProducts()) // После того как Refresh обновил токен в LocalStorage, снова запрашиваем продукты
-            .then(products => {
-                setProducts(products); // Обновляем массив данными
+                if (e.status === 401) { // запускаем цепочку обновления токена (Refresh) если ошибка 401
+
+                    Refresh()
+                        .then(() => LoadAuthProducts()) // После того как Refresh обновил токен в LocalStorage, снова запрашиваем продукты
+                        .then(products => {
+                            setProducts(products); // Обновляем массив данными
+                        });
+                }
+
             });
     }, []);
 
