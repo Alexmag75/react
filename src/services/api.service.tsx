@@ -27,8 +27,7 @@ export const login=async ({username,password,expiresInMins}:LoginData):Promise<I
 
    const {data: userWhitTokens}=await axiosInstance.post<IUserWhitTokens>('/login',{username,password,expiresInMins});
    localStorage.setItem('user',JSON.stringify(userWhitTokens))
-    console.log(userWhitTokens)
-    return userWhitTokens;
+        return userWhitTokens;
 }
 
 export const LoadAuthProducts=async ():Promise<IProducts[]>=>{
