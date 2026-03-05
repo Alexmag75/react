@@ -10,9 +10,6 @@ export const User: FC<{
     mas: string[],
     item: { name: string }
 }> = memo(({mas, item}) => {
-
-    console.log('Рендер компонента User:', item.name);
-
     return (
         <div>
             {item.name}
