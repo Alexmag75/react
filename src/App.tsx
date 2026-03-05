@@ -1,9 +1,11 @@
-import './App.css'
+import './App.css';
+import {Users} from "./components/Users.tsx";
+
 function App() {
-  return (
-    <>
-       старт
-    </>
-  )
+    return (
+        <div>
+            <Users/>
+        </div>
+    );
 }
 export default App
