@@ -1,6 +1,11 @@
 .light{
-    background-color: #ccc;
+    background-color: #e6dddd;
 }
 .dark{
     background-color: black;
+}
+.block{
+    display: flex;
+    width: 500px;
+    height: 200px;
 }

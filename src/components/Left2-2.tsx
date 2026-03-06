@@ -8,7 +8,9 @@ export const Left22=()=>{
         <>
 <div className={theme}>
 
+<div className='block'>
 
+</div>
      </div>
         </>
     )
