@@ -4,6 +4,7 @@ import {postService} from "../services/api.service.ts";
 import type {AxiosError} from "axios";
 
 type PostSliceType={
+    length: any;
     posts:IPost[]
 }
 const initPostSliceState:PostSliceType={posts:[]};
@@ -24,4 +25,4 @@ export  const postSlice=createSlice({
         state.posts=action.payload
     })
 });
-export const userActions={...postSlice.actions,loadPosts};
+export const postActions={...postSlice.actions,loadPosts};

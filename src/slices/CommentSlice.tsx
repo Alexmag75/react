@@ -4,6 +4,7 @@ import {commentService} from "../services/api.service.ts";
 import type {AxiosError} from "axios";
 
 type CommentSliceType={
+    length: any;
     comments:IComment[]
 }
 const initCommentSliceState:CommentSliceType={comments:[]};
@@ -24,4 +25,4 @@ export  const commentSlice=createSlice({
         state.comments=action.payload
     })
 });
-export const userActions={...commentSlice.actions,loadComments};
+export const commentActions={...commentSlice.actions,loadComments};

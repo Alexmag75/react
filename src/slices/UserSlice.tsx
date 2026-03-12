@@ -4,6 +4,7 @@ import {userService} from "../services/api.service.ts";
 import type {AxiosError} from "axios";
 
 type UserSliceType={
+    length: any;
     users:IUser[]
 }
 const initUserSliceState:UserSliceType={users:[]};
