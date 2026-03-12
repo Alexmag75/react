@@ -2,8 +2,6 @@ import {createAsyncThunk, createSlice, type PayloadAction} from "@reduxjs/toolki
 import type {IPost} from "../modeles/IPost.ts";
 import {postService} from "../services/api.service.ts";
 import type {AxiosError} from "axios";
-import type {IUser} from "../modeles/IUser.ts";
-
 
 type PostSliceType={
     posts:IPost[]
@@ -18,12 +16,12 @@ const loadPosts=createAsyncThunk("loadPosts",async (_,thunkAPI )=>{
         return thunkAPI.rejectWithValue(error.response?.status || 'Server Error');
     }
 });
-export  const userSlice=createSlice({
+export  const postSlice=createSlice({
     name: 'postSlice',
     initialState: initPostSliceState,
     reducers: {},
-    extraReducers: builder => builder.addCase(loadPosts.fulfilled,(state, action:PayloadAction<IUser[]>)=>{
+    extraReducers: builder => builder.addCase(loadPosts.fulfilled,(state, action:PayloadAction<IPost[]>)=>{
         state.posts=action.payload
     })
 });
-export const userActions={...userSlice.actions,loadPosts};
+export const userActions={...postSlice.actions,loadPosts};
